@@ -1,0 +1,15 @@
+# create
+# createMovie returns Movie object
+{
+	createMovie(options:{title:"bob the movie 3", minutes: 42})
+	{id, title, minutes}
+}
+
+# read
+getMovies({id,title,movies})
+
+# update
+mutation{updateMovie(id: 2, input:{title:"Bob remake2", minutes:25})}
+
+# delete
+mutation{deleteMovie(id:3)}
